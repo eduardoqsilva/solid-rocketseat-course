@@ -23,15 +23,20 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.16",
     "@types/node": "^25.9.1",
+    "@types/pg": "8.20.0",
     "husky": "9.1.7",
     "lint-staged": "17.0.5",
+    "prisma": "7.8.0",
     "tsup": "^8.5.1",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "7.8.0",
+    "@prisma/client": "7.8.0",
     "dotenv": "17.4.2",
     "fastify": "^5.8.5",
+    "pg": "8.21.0",
     "zod": "4.4.3"
   }
 }
