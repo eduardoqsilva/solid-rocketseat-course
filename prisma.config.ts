@@ -13,4 +13,3 @@ export default defineConfig({
     url: env.DATABASE_URL,
   },
 })
-console.log(env.DATABASE_URL)
