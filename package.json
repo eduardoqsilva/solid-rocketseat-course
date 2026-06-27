@@ -8,8 +8,11 @@
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
     "lint:fix": "biome format --write",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
@@ -24,12 +27,15 @@
     "@biomejs/biome": "2.4.16",
     "@types/node": "^25.9.1",
     "@types/pg": "8.20.0",
+    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/ui": "4.1.8",
     "husky": "9.1.7",
     "lint-staged": "17.0.5",
     "prisma": "7.8.0",
     "tsup": "^8.5.1",
     "tsx": "^4.22.3",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "4.1.8"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.8.0",
