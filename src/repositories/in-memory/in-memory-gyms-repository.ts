@@ -23,7 +23,7 @@ export class InMemoryGymsepository implements GymsRepository {
       .slice((page - 1) * 20, page * 20)
   }
 
-  async searchManyNearby(params: FindManyNearby): Promise<Gym[]> {
+  async findManyNearby(params: FindManyNearby): Promise<Gym[]> {
     return this.items.filter((item) => {
       const distance = getDistanceBetweenCoordinates(
         {

@@ -6,8 +6,8 @@ export interface FindManyNearby {
 }
 
 export interface GymsRepository {
-  findById(userId: string): Promise<Gym | null>
+  findById(gymId: string): Promise<Gym | null>
   create(data: GymCreateInput): Promise<Gym>
   searchMany(query: string, page: number): Promise<Gym[]>
-  searchManyNearby(params: FindManyNearby): Promise<Gym[]>
+  findManyNearby(params: FindManyNearby): Promise<Gym[]>
 }
