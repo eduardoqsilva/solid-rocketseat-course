@@ -51,6 +51,5 @@ describe('Nearby Gyms (e2e)', () => {
         title: 'JavaScript Gym',
       }),
     ])
-    console.log(response)
   })
 })
